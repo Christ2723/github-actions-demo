@@ -3,7 +3,7 @@ name: Environment Variable Demo
 on: [push]
 
 env:
-  GREETING: "Hello"
+  GREETING: "Hi"
 
 jobs:
   print-greeting:
@@ -11,5 +11,4 @@ jobs:
     steps:
       - name: Print Greeting
         run: echo "${{ env.GREETING }}, World!"
-        
-          
+
